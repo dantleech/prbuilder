@@ -23,13 +23,9 @@ class Application extends SilexApplication
         $app = $this;
         $app['debug'] = true;
         $this->post('/pr', function (Request $request) use ($app) {
-            $prManager = $app->get('manager.pull_request');
+            print_r($_POST);
+            $app['manager.pull_request'];
             return new Response('ok');
         });
-    }
-
-    public function get($name)
-    {
-        return $this->prcontainer->get($name);
     }
 }
