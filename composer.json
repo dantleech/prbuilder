@@ -1,0 +1,25 @@
+{
+    "name": "prbuilder/prbuilder",
+    "description": "PR Builder",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "videlalvaro/php-amqplib": "~2.4.1",
+        "symfony/console": "~2.5.0",
+        "symfony/process": "~2.5.0",
+        "silex/silex": "~1.2.2@stable",
+        "jackalope/jackalope-fs": "dev-master"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "PrBuilder\\": "src"
+        }
+    }
+}

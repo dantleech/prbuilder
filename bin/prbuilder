@@ -1,0 +1,16 @@
+#!/bin/env php
+<?php
+
+$vendorDir = __DIR__.'/../vendor';
+
+$file = $vendorDir . '/autoload.php';
+
+if (file_exists($file)) {
+    $autoload = require_once $file;
+} else {
+    echo 'Cannot find the vendor directory, have you executed composer install?';
+    exit(1);
+}
+
+$shell = new \PrBuilder\Console\Application();
+$shell->run();
