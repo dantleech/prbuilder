@@ -1,11 +1,12 @@
 <?php
 
-namespace PrBuilder\Console\Command;
+namespace PrBuilder\Console\Command\Pr;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\ProcessBuilder;
 use Symfony\Component\Console\Input\InputArgument;
+use PrBuilder\Console\Command\BaseCommand;
 
 class ServeCommand extends BaseCommand
 {

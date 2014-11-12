@@ -21,10 +21,11 @@ class Application extends BaseApplication
 
     private function registerCommands()
     {
-        $this->add(new Command\ListCommand());
-        $this->add(new Command\BuildCommand());
-        $this->add(new Command\ListenCommand());
-        $this->add(new Command\ServeCommand());
+        $this->add(new Command\Pr\ListCommand());
+        $this->add(new Command\Pr\BuildCommand());
+        $this->add(new Command\Pr\ListenCommand());
+        $this->add(new Command\Pr\ServeCommand());
+        $this->add(new Command\Branch\BuildCommand());
     }
 
     public function getContainer()
