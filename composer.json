@@ -13,7 +13,10 @@
         "symfony/console": "~2.5.0",
         "symfony/process": "~2.5.0",
         "silex/silex": "~1.2.2@stable",
-        "jackalope/jackalope-fs": "dev-master"
+        "jackalope/jackalope-fs": "dev-master",
+        "stage1/docker-php": "@dev",
+        "phpspec/prophecy-phpunit": "@dev",
+        "symfony/yaml": "~2.5.0"
     },
     "require-dev": {
     },
